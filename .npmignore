@@ -1,0 +1,20 @@
+# modules:
+node_modules
+
+# config files:
+tsconfig.json
+.versionrc.json
+babel.config.js
+jest.config.js
+
+.gitignore
+.npmignore
+
+# source code:
+src
+
+# tests:
+tests
+
+# docs
+docs

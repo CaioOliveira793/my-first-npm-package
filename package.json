@@ -1,0 +1,33 @@
+{
+  "name": "test-calculator",
+  "description": "test npm publish package",
+  "license": "MIT",
+  "version": "0.1.0",
+  "homepage": "https://github.com/CaioOliveira793/my-first-npm-module#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CaioOliveira793/my-first-npm-module.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CaioOliveira793/my-first-npm-module/issues"
+  },
+  "author": "Caio Oliveira",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/jest": "^26.0.10",
+    "@types/node": "^14.6.0",
+    "babel-jest": "^26.3.0",
+    "jest": "^26.4.1",
+    "standard-version": "^9.0.0",
+    "ts-jest": "^26.2.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^4.0.2"
+  }
+}
