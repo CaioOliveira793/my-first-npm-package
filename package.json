@@ -2,7 +2,7 @@
   "name": "test-calculator",
   "description": "test npm publish package",
   "license": "MIT",
-  "version": "0.1.0",
+  "version": "0.1.1-beta.0",
   "homepage": "https://github.com/CaioOliveira793/my-first-npm-module#readme",
   "repository": {
     "type": "git",

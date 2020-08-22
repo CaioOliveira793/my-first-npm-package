@@ -11,5 +11,5 @@
 	],
 	"infile": "docs/CHANGELOG.md",
 	"preMajor": true,
-	"releaseCommitMessageFormat": "release {{currentTag}}"
+	"releaseCommitMessageFormat": "chore(release): {{currentTag}}"
 }
