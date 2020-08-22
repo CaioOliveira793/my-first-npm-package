@@ -13,6 +13,17 @@
   },
   "author": "Caio Oliveira",
   "main": "index.js",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*": [
+      "jest --findRelatedTests"
+    ]
+  },
   "scripts": {
     "test": "jest",
     "build": "tsc"
@@ -21,10 +32,14 @@
     "@babel/core": "^7.11.4",
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-typescript": "^7.10.4",
+    "@commitlint/cli": "^9.1.2",
+    "@commitlint/config-conventional": "^9.1.2",
     "@types/jest": "^26.0.10",
     "@types/node": "^14.6.0",
     "babel-jest": "^26.3.0",
+    "husky": "^4.2.5",
     "jest": "^26.4.1",
+    "lint-staged": "^10.2.11",
     "standard-version": "^9.0.0",
     "ts-jest": "^26.2.0",
     "ts-node": "^8.10.2",
