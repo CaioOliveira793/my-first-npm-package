@@ -42,10 +42,10 @@ jobs:
 
         if (( ${{ contains(github.ref, 'master') }} )); then
           npx standard-version
-          git push --folow-tags origin master
+          git push --follow-tags origin master
         else
           npx standard-version --prerelease beta
-          git push --folow-tags origin beta
+          git push --follow-tags origin beta
         fi
 
       if: contains(github.ref, 'beta')
