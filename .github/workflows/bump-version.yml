@@ -37,14 +37,14 @@ jobs:
 
     - name: Bump version
       run: |
-        git config user.name publisher
-        git config user.email ${{ github.actor }}
+        git config user.name GitHub Action
+        git config user.email action@github.com
 
         if (( ${{ contains(github.ref, 'master') }} )); then
-          npx standard-version --sign
+          npx standard-version
           git push --folow-tags origin master
         else
-          npx standard-version --prerelease beta --sign
+          npx standard-version --prerelease beta
           git push --folow-tags origin beta
         fi
 
