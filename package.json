@@ -1,5 +1,5 @@
 {
-  "name": "test-calculator",
+  "name": "@caio-oliveira/test-calculator",
   "description": "test npm publish package",
   "license": "MIT",
   "version": "0.1.1-beta.0",
