@@ -17,17 +17,18 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-        registry-url: 'https://npm.pkg.github.com/'
+        registry-url: 'https://registry.npmjs.org'
 
     - name: Cache dependencies
       uses: actions/cache@v2
       env:
         cache-key: dependencies
+        node-version: '12.x'
       with:
         path: ~/.npm
-        key: ${{ env.cache-key }}-${{ github.ref }}-${{ hashFiles('**/package-lock.json') }}
+        key: ${{ env.cache-key }}-${{ env.node-version }}-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
-          ${{ env.cache-key }}-${{ github.ref }}-
+          ${{ env.cache-key }}-${{ env.node-version }}-
           ${{ env.cache-key }}-
 
     - name: Install dependencies
