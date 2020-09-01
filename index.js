@@ -1,1 +1,1 @@
-module.exports = require('./dist/Calculator');
+module.exports = require('./dist/Calculator').default;
