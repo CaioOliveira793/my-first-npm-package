@@ -1,6 +1,6 @@
 import Calculator from '../../src/Calculator';
 
-describe('calculator state', () => {
+describe('State', () => {
 
 	it('reset the calculator', async () => {
 		const calculator = new Calculator();
