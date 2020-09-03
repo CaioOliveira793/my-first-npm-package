@@ -30,9 +30,9 @@ jobs:
         cache-key: dependencies
       with:
         path: ~/.npm
-        key: ${{ env.cache-key }}-${{ github.base_ref }}-${{ hashFiles('**/package-lock.json') }}
+        key: ${{ env.cache-key }}-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
-          ${{ env.cache-key }}-${{ github.base_ref }}-
+          ${{ env.cache-key }}-${{ matrix.node-version }}-
           ${{ env.cache-key }}-
 
     - name: Install dependencies
