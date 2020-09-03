@@ -1,6 +1,6 @@
 import Calculator from '../../src/Calculator';
 
-describe('basic operations', () => {
+describe('operations', () => {
 
 	it('add two numbers', async () => {
 		const calculator = new Calculator();

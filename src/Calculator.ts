@@ -1,7 +1,6 @@
 class Calculator {
 	constructor() {
 		this.operations = [['=', 0]];
-		this.result = 0;
 
 		this.addSubtractIndex = [];
 		this.multiplyDivideIndex = [];
@@ -29,6 +28,25 @@ class Calculator {
 		this.multiplyDivideIndex.push(this.operations.length);
 		this.operations.push(['/', number]);
 		return this;
+	}
+
+
+	public expression(): string {
+		let expression: string = 'x';
+
+		if (this.operations.length <= 1) return '';
+
+		for (const [operation, number] of this.operations) {
+			expression += ` ${operation}`;
+
+			if (number < 0) {
+				expression += ` (${number})`;
+			} else {
+				expression += ` ${number}`;
+			}
+		}
+
+		return expression;
 	}
 
 
@@ -68,31 +86,30 @@ class Calculator {
 			}
 		}
 
-		this.result = this.operations[0][1];
+		const result = this.operations[0][1];
 
-		this.operations = [['=', 0]];
+		this.operations = [['=', result]];
 		this.addSubtractIndex = [];
 		this.multiplyDivideIndex = [];
 
-		return this.result;
+		return result;
 	}
 
 	public reset(number = 0): Calculator {
 		this.operations = [['=', number]];
 		this.addSubtractIndex = [];
 		this.multiplyDivideIndex = [];
-		this.result = 0;
 		return this;
 	}
 
 	public undo(): Calculator {
-		if (this.operations.length === 1) return this;
+		if (this.operations.length <= 1) return this;
 
 		const operation = (this.operations.pop() as [string, number])[0];
 
 		if (operation === '+' ||  operation === '-') {
 			this.addSubtractIndex.pop();
-		} else if (operation === '*' ||  operation === '/') {
+		} else {
 			this.multiplyDivideIndex.pop();
 		}
 
@@ -101,7 +118,6 @@ class Calculator {
 
 
 	private operations: [string, number][];
-	private result: number;
 
 	private addSubtractIndex: number[];
 	private multiplyDivideIndex: number[];
