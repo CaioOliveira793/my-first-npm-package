@@ -2,7 +2,7 @@
   "name": "@caio-oliveira/test-calculator",
   "description": "test npm publish package",
   "license": "MIT",
-  "version": "0.1.1-beta.0",
+  "version": "0.1.1-beta.4",
   "homepage": "https://github.com/CaioOliveira793/my-first-npm-module#readme",
   "repository": {
     "type": "git",
@@ -13,11 +13,11 @@
   },
   "author": "Caio Oliveira",
   "main": "index.js",
-	"types": "dist/Calculator.d.ts",
-	"files": [
-		"index.js",
-		"dist/**/*"
-	],
+  "types": "dist/Calculator.d.ts",
+  "files": [
+    "index.js",
+    "dist/**/*"
+  ],
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
