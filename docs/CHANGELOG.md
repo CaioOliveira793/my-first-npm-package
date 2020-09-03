@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.1-beta.5 (2020-09-03)
+
+
+### Features
+
+* add expression preview ([#9](https://github.com/CaioOliveira793/my-first-npm-module/issues/9)) ([5ce5021](https://github.com/CaioOliveira793/my-first-npm-module/commit/5ce5021defc80118cd4a31f0f0d701707351a5df))
+
 ### 0.1.1-beta.4 (2020-09-01)
 
 ### 0.1.1-beta.3 (2020-09-01)
