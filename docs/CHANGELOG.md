@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.1-beta.7 (2020-09-05)
+
+
+### Bug Fixes
+
+* publish version if are in branch beta ([#13](https://github.com/CaioOliveira793/my-first-npm-module/issues/13)) ([b3168e7](https://github.com/CaioOliveira793/my-first-npm-module/commit/b3168e713a98d05376b3c96fefaf754b80428467))
+
 ### 0.1.1-beta.6 (2020-09-05)
 
 
