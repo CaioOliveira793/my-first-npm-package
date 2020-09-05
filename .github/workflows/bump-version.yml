@@ -38,10 +38,10 @@ jobs:
 
     - name: Bump version
       run: |
-        git config user.name GitHub Action
-        git config user.email action@github.com
+        git config user.name "GitHub Action"
+        git config user.email "action@github.com"
 
-        if (( ${{ contains(github.ref, 'master') }} )); then
+        if ( ${{ contains(github.ref, 'master') }} ); then
           npx standard-version
           git push --follow-tags origin master
         else
