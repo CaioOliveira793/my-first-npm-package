@@ -49,8 +49,8 @@ jobs:
           git push --follow-tags origin beta
         fi
 
-      if: contains(github.ref, 'beta')
     - name: Publish beta version on NPM
+      if: contains(github.ref, 'beta')
       run: npm publish --access public --tag beta
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
