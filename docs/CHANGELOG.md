@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.1-beta.6 (2020-09-05)
+
+
+### Documentation
+
+* add README.md ([#10](https://github.com/CaioOliveira793/my-first-npm-module/issues/10)) ([87d0232](https://github.com/CaioOliveira793/my-first-npm-module/commit/87d0232c1a829e46599409d77130048d10177719))
+
 ### 0.1.1-beta.5 (2020-09-03)
 
 
