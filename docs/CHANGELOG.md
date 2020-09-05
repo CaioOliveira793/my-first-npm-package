@@ -1,0 +1,32 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### 0.1.1-beta.6 (2020-09-05)
+
+
+### Documentation
+
+* add README.md ([#10](https://github.com/CaioOliveira793/my-first-npm-module/issues/10)) ([87d0232](https://github.com/CaioOliveira793/my-first-npm-module/commit/87d0232c1a829e46599409d77130048d10177719))
+
+### 0.1.1-beta.5 (2020-09-03)
+
+
+### Features
+
+* add expression preview ([#9](https://github.com/CaioOliveira793/my-first-npm-module/issues/9)) ([5ce5021](https://github.com/CaioOliveira793/my-first-npm-module/commit/5ce5021defc80118cd4a31f0f0d701707351a5df))
+
+### 0.1.1-beta.4 (2020-09-01)
+
+### 0.1.1-beta.3 (2020-09-01)
+
+### 0.1.1-beta.2 (2020-09-01)
+
+
+### Features
+
+* add undo operations ([#5](https://github.com/CaioOliveira793/my-first-npm-module/issues/5)) ([c9b5768](https://github.com/CaioOliveira793/my-first-npm-module/commit/c9b5768c1c4d3021aade6eda0fcf72dacf255924))
+
+### 0.1.1-beta.1 (2020-08-27)
+
+### 0.1.1-beta.0 (2020-08-22)

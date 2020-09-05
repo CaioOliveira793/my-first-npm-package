@@ -1,20 +1,16 @@
-# modules:
+# folders
 node_modules
+.github
+src
+tests
+docs
 
 # config files:
 tsconfig.json
 .versionrc.json
+commitlint.config.js
 babel.config.js
 jest.config.js
 
 .gitignore
 .npmignore
-
-# source code:
-src
-
-# tests:
-tests
-
-# docs
-docs
